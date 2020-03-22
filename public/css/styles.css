@@ -1,0 +1,156 @@
+body {    
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+.esq {
+    width: 50%;
+    height: 100%;
+    min-height: 100%;
+    float: left;background: url(../img/bg-all.png) no-repeat;
+    background-position:;
+}
+
+.esq section {
+    text-align: center;
+}
+
+.esq:after {
+    content: '';
+    position: absolute;
+    height: 84px;
+    bottom: -10px;
+    background: red;
+    width: 50%;
+    background: url(../img/bg-bottom.png);
+    background-position: top;
+    background-size: cover;
+}
+
+.logo {
+    margin-top: 70px;
+}
+
+h1,h2,h3 {
+    margin: 02px 0px;
+}
+
+.esq h2 {
+    color: #FFF;
+    font-size: 25px;
+    margin-top: 25px;
+}
+
+.esq h3 {
+    color: #FFE603;
+    font-size: 25px;
+}
+
+.dir {
+    width: 50%;
+    background: #FFF;
+    height: 100%;
+    min-height: 100%;
+    float: right;
+    overflow-x: auto;
+}
+
+.dir ul {
+    padding: 5px 30px;
+    list-style: none;
+    margin: 0;
+}
+
+.dir  li {
+    width: 45%;
+    float: left;
+    margin: 10px;
+    border-radius: 4px;
+    position: relative;
+}
+
+.dir  li a {
+   text-decoration: none;
+}
+
+.dir  li a:hover {
+    background: yellow;
+ }
+
+.dir li img {
+    max-width: 100%;    
+    border: solid 1px #ddd;
+    margin: 0;
+}
+
+.dir li span {
+    width: 100%;
+    background: rgba(0,0,0,0.7);
+    display: block;
+    position: relative;
+    text-indent: 20px;
+    top: -31px;
+    padding: 4px 1px;
+    color: #FFF;
+    font-size: 16px;
+}
+
+.dir h1 {
+    font-size: 28px;
+    font-weight: 600;
+    padding-bottom: 5px;
+    border-bottom: solid 4px #CC0000;
+    margin: 15px 30px 0px 30px;
+}
+
+.box-grey {
+    background: #eee;
+    padding: 4px 25px;
+    font-weight: 600;
+    font-size: 15px;
+    margin: 25px 0px;
+}
+
+.product-list {
+    margin: 10px 30px;
+    border-bottom: solid 1px #DDD;
+    display: flex;
+    align-items: center;
+    min-height: 100px;
+}
+
+.product-list h3 {
+    font-weight: 600;
+    font-size: 20px;
+    padding-top: 11px;
+}
+
+.product-list img {
+    width: 75px;
+    height: 75px;
+    border: solid 1px #ddd;
+    border-radius: 50%;
+    display: block;
+}
+
+.product-list a {
+    color: #000;
+    text-decoration: none;
+}
+
+.product-list a:visited {
+    color: #000;
+    text-decoration: none;
+    transition: 1s;
+}
+
+.product-list a:hover {
+    color: rgb(197, 24, 24);
+}
