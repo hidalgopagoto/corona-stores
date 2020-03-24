@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Utils;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 
@@ -49,7 +50,7 @@ class CategoryController extends Controller
             }
             $category = new Category();
             $category->name = $name;
-            $category->slug = $this->slugify($name);
+            $category->slug = Utils::slugify($name);
             $category->order = $request->input("order");
             if (!$category->order) {
                 throw new \Exception("O campo ordem não pode estar em branco", 400);
@@ -62,37 +63,6 @@ class CategoryController extends Controller
         } catch (\Exception $e) {
             return $this->handleException($e);
         }
-    }
-
-    /**
-     * @param $text
-     * @return false|string|string[]|null
-     */
-    private function slugify($text)
-    {
-        // replace non letter or digits by -
-        $text = preg_replace('~[^\pL\d]+~u', '-', $text);
-
-        // transliterate
-        $text = iconv('utf-8', 'us-ascii//TRANSLIT', $text);
-
-        // remove unwanted characters
-        $text = preg_replace('~[^-\w]+~', '', $text);
-
-        // trim
-        $text = trim($text, '-');
-
-        // remove duplicate -
-        $text = preg_replace('~-+~', '-', $text);
-
-        // lowercase
-        $text = strtolower($text);
-
-        if (empty($text)) {
-            return 'n-a';
-        }
-
-        return $text;
     }
 
     /**
@@ -169,7 +139,7 @@ class CategoryController extends Controller
         /* Instanciar Image Manipulation e gerar uma miniatura */
 
         $im = new ImageManipulation();
-        $im->loadResizeCropSave($dpath.$category->id.'.'.$extension, $dpath.$category->id.'_mini.'.$extension, 400, 250);
+        $im->loadResizeCropSave($dpath.$category->id.'.'.$extension, $dpath.$category->id.'_mini.'.$extension, 720, 660);
 
         $category->image = $dpath.$category->id.'_mini.'.$extension;
         $category->save();

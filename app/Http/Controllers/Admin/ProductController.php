@@ -71,6 +71,7 @@ class ProductController extends Controller
 
             $category = $this->getCategory($request->input('id_category'));
             $product->id_category = $category->id;
+            $product->slug = 0;
             $product->name = $request->input('name');
             if (!$product->name) {
                 throw new \Exception("O campo nome é de preenchimento obrigatório");
@@ -85,6 +86,9 @@ class ProductController extends Controller
                 throw new \Exception("O campo preço é de preenchimento obrigatório");
             }
             $product->featured = $request->input('featured') ? 1 : 0;
+            $product->save();
+
+            $product->slug = Utils::slugify($product->id."-".$product->name);
             $product->save();
 
             if ($request->hasFile("image")) {
@@ -242,7 +246,7 @@ class ProductController extends Controller
 
         /* Instanciar Image Manipulation e gerar uma miniatura quadrada com 300x300 */
         $im = new ImageManipulation();
-        $im->loadResizeCropSave($dpath.$product->id.'.'.$extension, $dpath.$product->id.'_mini.'.$extension, 400, 400);
+        $im->loadResizeCropSave($dpath.$product->id.'.'.$extension, $dpath.$product->id.'_mini.'.$extension, 720, 960);
 
         $product->image = $dpath.$product->id."_mini.".$extension;
         $product->save();

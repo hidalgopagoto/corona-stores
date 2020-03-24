@@ -62,7 +62,7 @@
             <div class="form-group">
                 <label class="control-label col-md-3">Imagem atual</label>
                 <div class="col-md-3">
-                    <img src="{{ URL::asset($category->image) }}" class="img-responsive">
+                    <img src="{{ URL::asset($category->image) }}?v={{ date('YmdHis') }}" class="img-responsive">
                     <div class="">
                         <label for="inputRemoveImage">
                             <input id="inputRemoveImage" type="checkbox" name="remove_image" value="1">
