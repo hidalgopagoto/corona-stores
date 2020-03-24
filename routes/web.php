@@ -31,5 +31,6 @@ Route::prefix('admin')->group(function () {
         Route::post('shippings/options', 'Admin\ShippingController@storeOption');
         Route::delete('shippings/options/{id}', 'Admin\ShippingController@deleteOption');
         Route::put('shippings/options', 'Admin\ShippingController@updateOptions');
+        Route::resource('banners', 'Admin\BannerController', ['except' => 'show']);
     });
 });

@@ -80,6 +80,14 @@
     </div>
     <div class="form-body">
         <div class="form-group">
+            <label class="control-label col-md-3">Em promoção</label>
+            <div class="col-md-9">
+                <input type="checkbox" name="featured" value="1" {{ isset($product) && $product->featured ? 'checked="checked"' : '' }}>
+            </div>
+        </div>
+    </div>
+    <div class="form-body">
+        <div class="form-group">
             <label class="control-label col-md-3">Imagem</label>
             <div class="col-md-9">
                 <input type="file" name="image">

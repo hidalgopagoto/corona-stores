@@ -2,6 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="761a4837-ce46-4b52-a1ac-e6d7477269cb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/products/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/products/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/admin/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/admin/admin.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../nostra-casa/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../nostra-casa/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../nostra-casa/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../nostra-casa/app/Http/Controllers/ProductController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../nostra-casa/app/ImageManipulation.php" beforeDir="false" afterPath="$PROJECT_DIR$/../nostra-casa/app/ImageManipulation.php" afterDir="false" />
@@ -19,7 +27,7 @@
     </execution>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../nostra-casa" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -117,7 +125,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -142,7 +150,8 @@
       <option name="presentableId" value="Default" />
       <updated>1584759390080</updated>
       <workItem from="1584759391458" duration="5326000" />
-      <workItem from="1584810595801" duration="19936000" />
+      <workItem from="1584810595801" duration="27441000" />
+      <workItem from="1585014245944" duration="1623000" />
     </task>
     <servers />
   </component>
@@ -150,6 +159,14 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="726" y="310" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1585014657300">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="726" y="310" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/1920.0.1920.1080/67.27.1853.1053@67.27.1853.1053" timestamp="1585014657300" />
+    <state x="743" y="297" width="424" height="484" key="FileChooserDialogImpl" timestamp="1584903774281">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="743" y="297" width="424" height="484" key="FileChooserDialogImpl/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1584903774281" />
     <state x="616" y="366" key="com.intellij.ide.util.TipDialog" timestamp="1584810596701">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -158,11 +175,11 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="605" y="278" width="709" height="522" key="find.popup/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1584818330517" />
-    <state x="610" y="257" width="697" height="679" key="search.everywhere.popup" timestamp="1584853948623">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state x="656" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1585016439336">
+      <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="610" y="257" width="697" height="679" key="search.everywhere.popup/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1584853948623" />
+    <state x="610" y="257" width="697" height="679" key="search.everywhere.popup/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1584973695087" />
     <state x="2530" y="236" width="697" height="696" key="search.everywhere.popup/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1584764520014" />
-    <state x="656" y="257" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1080/67.27.1853.1053@67.27.1853.1053" timestamp="1584760592492" />
+    <state x="656" y="257" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1080/67.27.1853.1053@67.27.1853.1053" timestamp="1585016439336" />
   </component>
 </project>

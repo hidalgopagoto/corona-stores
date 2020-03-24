@@ -84,6 +84,7 @@ class ProductController extends Controller
             if (!$product->price) {
                 throw new \Exception("O campo preço é de preenchimento obrigatório");
             }
+            $product->featured = $request->input('featured') ? 1 : 0;
             $product->save();
 
             if ($request->hasFile("image")) {
@@ -185,7 +186,7 @@ class ProductController extends Controller
             if (!$product->price) {
                 throw new \Exception("O campo preço não pode estar em branco");
             }
-            $product->price = $request->input('price');
+            $product->featured = $request->input('featured') ? 1 : 0;
             if ($request->input("remove_image")) {
                 @unlink("images/products/".$product->id.".jpg");
                 @unlink("images/products/".$product->id."_mini.jpg");
