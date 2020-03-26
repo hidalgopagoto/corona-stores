@@ -98,6 +98,12 @@ License: You must have a valid license purchased only from themeforest(the above
                                 </a>
                             </li>
                             <li class="nav-item start ">
+                                <a href="{{ URL::to('admin/settings') }}" class="nav-link">
+                                    <i class="fa fa-cogs"></i>
+                                    <span class="title">Configurações</span>
+                                </a>
+                            </li>
+                            <li class="nav-item start ">
                                 <a href="{{ URL::to('admin/logout') }}" class="nav-link">
                                     <i class="fa fa-sign-out"></i>
                                     <span class="title">Sair</span>
